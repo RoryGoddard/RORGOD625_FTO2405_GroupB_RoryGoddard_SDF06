@@ -1,4 +1,82 @@
+/* Added colours found in the icon image, both to try match styling and to continue the more personal feeling*/
+:root {
+    --background-colour: #e9e6e2;
+    --button-colour: #bc440a;
+    --li-hover: #9ca49d;
+    --text-colour-light: #e9e6e2;
+    --text-colour-dark: #a19790;
+    --dark-brown: #373420;
+    --li-colour: #649c16;
+}
+
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--background-colour);
+    color: var(--dark-brown);
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+}
+
+img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+input {
+    color: #373420;
+    background-color: #bfb2a0;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: var(--dark-brown);
+    cursor: pointer;
+}
+
+button {
+    color: var(--text-colour-light);
+    background-color: var(--button-colour);
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ul li:hover {
+    background-color: var(--li-hover);
+    cursor: pointer;
+}
+
+ul li {
+    font-size: 20px;
+    background-color: var(--li-colour);
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    text-align: center;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
 }
